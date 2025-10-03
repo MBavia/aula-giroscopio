@@ -25,10 +25,14 @@ O projeto foca na implementação de leitura suave e responsiva do sensor, lógi
 
 ---
 
+
 ### Demonstração da Aplicação
 <p align="center">
-  *Adicione um GIF ou uma imagem do jogo aqui!*
+  <img src="imagens/foto1.png" alt="Tela inicial do jogo" width="250"/>
+  <img src="imagens/foto2.png" alt="Jogando e coletando orbe" width="250"/>
+  <img src="imagens/foto3.png" alt="Tela de vitória" width="250"/>
 </p>
+
 
 ---
 
