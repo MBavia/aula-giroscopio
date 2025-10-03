@@ -28,9 +28,9 @@ O projeto foca na implementação de leitura suave e responsiva do sensor, lógi
 
 ### Demonstração da Aplicação
 <p align="center">
-  <img src="imagens/foto1.png" alt="Tela inicial do jogo" width="250"/>
-  <img src="imagens/foto2.png" alt="Jogando e coletando orbe" width="250"/>
-  <img src="imagens/foto3.png" alt="Tela de vitória" width="250"/>
+  <img src="./assets/images/foto1.png" alt="Tela inicial do jogo" width="250"/>
+  <img src="./assets/imagens/foto2.png" alt="Jogando e coletando orbe" width="250"/>
+  <img src="./assets/imagens/foto3.png" alt="Tela de vitória" width="250"/>
 </p>
 
 
@@ -70,7 +70,7 @@ Siga estas instruções no seu terminal:
 
 ```bash
 # 1. Clone o repositório
-$ git clone [link-do-seu-repositorio]
+$ git clone [https://github.com/MBavia/aula-giroscopio.git]
 
 # 2. Navegue até o diretório do projeto
 $ cd orbe-de-gira # Mude para o nome do diretório do seu projeto
