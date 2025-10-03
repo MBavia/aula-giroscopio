@@ -1,50 +1,84 @@
-# Welcome to your Expo app 👋
+# 🕹️ Orbe de Gira - Jogo Baseado em Giroscópio
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> Status do Projeto: Concluído ✅
+---
 
-## Get started
+### Tabela de Conteúdos
+* [Descrição do Projeto](#descrição-do-projeto)
+* [Demonstração da Aplicação](#demonstração-da-aplicação)
+* [Funcionalidades](#🚀-funcionalidades)
+* [Tecnologias Utilizadas](#🛠️-tecnologias-utilizadas)
+* [Pré-requisitos](#✅-pré-requisitos)
+* [Como Rodar o Projeto Localmente](#⚙️-como-rodar-o-projeto-localmente)
+* [Funcionalidade Adicional](#⭐-funcionalidade-adicional)
+* [Autor](#👨‍💻-autor)
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+### Descrição do Projeto
+<p align="center">
+Este projeto é uma prova de conceito para um jogo casual multiplataforma (iOS/Android) que utiliza o <b>Giroscópio</b> do dispositivo móvel como principal mecanismo de controle. O objetivo do jogo é simples: mover um "player" (esfera coral) inclinando o celular e coletar um "orbe" (esfera azul) que aparece em posições aleatórias na tela. 
+</p>
+<p align="center">
+O projeto foca na implementação de leitura suave e responsiva do sensor, lógica de colisão circular e gestão do estado do jogo, com um sistema de pontuação máxima e a opção de jogar novamente. É uma excelente demonstração de como interagir com o hardware do celular usando a biblioteca <code>expo-sensors</code>.
+</p>
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+### Demonstração da Aplicação
+<p align="center">
+  *Adicione um GIF ou uma imagem do jogo aqui!*
+</p>
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🚀 Funcionalidades
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Controle por Giroscópio:** O player se move em tempo real (60 FPS) de acordo com a inclinação do celular, usando a rotação em torno dos eixos X e Y.
+- **Colisão Circular:** Lógica precisa de detecção de colisão entre duas esferas (player e orbe) usando a distância entre seus centros.
+- **Sistema de Vitória:** Atingir a pontuação máxima de **20 pontos** dispara uma tela de parabéns.
+- **Reinício de Jogo:** Um botão "Jogar Novamente" permite reiniciar o jogo (placar, posição do player e estado) de forma rápida.
+- **Limpeza do Sensor (`Cleanup`):** Utilização do `useEffect` para garantir que o sensor seja desativado automaticamente ao sair da tela, economizando bateria e evitando *memory leaks*.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+### 🛠️ Tecnologias Utilizadas
+
+- **[React Native](https://reactnative.dev/)**
+- **[Expo](https://expo.dev/)**: Utilizado para o ambiente de desenvolvimento e para acesso facilitado ao hardware.
+- **`expo-sensors`**: Biblioteca essencial para a leitura de dados do giroscópio.
+- **[TypeScript](https://www.typescriptlang.org/)**
+
+---
+
+### ✅ Pré-requisitos
+
+Para rodar este projeto, você precisará de:
+1.  **Node.js** instalado.
+2.  **Expo CLI** instalado globalmente (`npm install -g expo-cli`).
+3.  Um **dispositivo móvel físico (iOS ou Android)**, pois o simulador não possui dados de giroscópio para testar a funcionalidade principal.
+
+---
+
+### ⚙️ Como Rodar o Projeto Localmente
+
+Siga estas instruções no seu terminal:
 
 ```bash
-npm run reset-project
-```
+# 1. Clone o repositório
+$ git clone [link-do-seu-repositorio]
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# 2. Navegue até o diretório do projeto
+$ cd orbe-de-gira # Mude para o nome do diretório do seu projeto
 
-## Learn more
+# 3. Instale as dependências do Node.js e Expo
+$ npm install
 
-To learn more about developing your project with Expo, look at the following resources:
+# 4. Inicie o servidor de desenvolvimento
+$ npm start
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 👨‍💻 Autor(a)
 
-## Join the community
+Desenvolvido por **[Manoela Bavia Camargo Pereira]**.
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Sob a orientação do **Prof. Rafael Ribas**.
